@@ -1,45 +1,80 @@
-<p align="center">
-    <img src="https://i.imgur.com/mtKemJ4.png"> 
-</p>       
-                                          
-## Preface   
-Full Fortnite project files for External. 
-  
-This is ready-to-use cheat, it has lot of core features and has no issues.
-          
-## Showcase
-https://github.com/KingzCheats/Fortnite-External/assets/114768995/82d501fb-9197-4887-95ce-7f9fdf03367b 
-                 
-## FAQ    
-### Where's the EXE?     
-We provide a binary in release tab. 
+# Fortnite Cheats - Ultimate Aimbot, ESP, and Wallhack Tool
 
-### How do I add a hitmarker sound?
-Create a **hitsounds** folder inside the **base** Fortnite directory.
-Place as many **.wav** sound files as you want inside of it. Load the cheat and they will be under the hitsounds combobox.
+<img width="711" height="400" alt="rQKIoe4" src="https://github.com/user-attachments/assets/2c67f0b7-1f1e-409b-89e0-5b3b39c4e701" />
 
-### Where are config files stored?
-Profiles are stored inside the **base** Fortnite directory under a folder named **profiles**.
 
-You can share profiles with friends by navigating to the configuration tab inside the cheat and selecting **Export**. This will copy all profile data to the clipboard which you can then paste to a friend.
+## Overview
+Welcome to the **Fortnite Cheats** repository! This project provides advanced tools for Fortnite, including a powerful **Fortnite aimbot**, **Fortnite ESP**, **Fortnite wallhack**, and other hacks. Built with C++ and memory manipulation techniques.
 
-To import a profile, just copy all of the profile data and press **Import**. Make sure to save your profile by entering a name and pressing **Save**.
 
-### Why does moving the menu crash the game?
-Disable multi-core rendering in your Fortnite video settings.
+## Features
+- **Fortnite Aimbot**: Smooth aiming with customizable FOV, bone targeting (head, body), and prediction for moving targets. Undetected against Epic's anti-cheat.
+- **Fortnite Wallhack**: See enemies through walls with color-coded outlines (red for enemies, blue for teammates).
+- **Fortnite ESP**: Displays player info like health, distance, weapons, and items in real-time overlays.
+- **Fortnite Triggerbot**: Auto-fires when crosshair is on an enemy.
+- **Recoil Control & No-Spread**: Eliminates weapon recoil and bullet spread.
+- **Skin Changer & Radar Hack**: Customize character skins and get a mini-map radar for enemy positions.
+- **Bypass Anti-Cheat**: Methods to evade Epic's anti-cheat system (e.g., kernel-level injection).
 
-### How do I open the menu?
-Press `INSERT`.
+All features configurable via an in-game menu. Optimized for Windows 10/11.
 
-### How do I unload the cheat?
-Press `END`.
+## Installation
+1. **Clone the Repo**:
+   ```
+   git clone https://github.com/playerbayfortnite-cheats.git
+   ```
+2. **Install Dependencies**:
+   - Visual Studio 2022 with C++ Desktop Development.
+   - External libs: ImGui for UI, MinHook for detours.
+   ```
+   vcpkg install imgui minhook
+   ```
+3. **Build the Project**:
+   - Open `FortniteCheats.sln` in Visual Studio.
+   - Build in Release mode for x64.
+4. **Inject the DLL**:
+   - Use Cheat Engine or Extreme Injector to load `FortniteAimbot.dll` into the game process.
+   - Run Fortnite and press `INSERT` to toggle the menu.
 
-## Credits 
-- dex and maddie for their address, hash, module, netvar, pattern, pe, and vmt classes
-- everyone who contributed to the project!
 
-## Known issues
-- Some of the code is unoptimized.
+## Usage
+- Launch Fortnite.
+- Inject the DLL.
+- Customize settings in the overlay menu:
+  - Aimbot Strength: 0-100 (best Fortnite aimbot settings).
+  - ESP Visibility: Toggle walls, names, health bars.
+- Use features like Fortnite wallhack and triggerbot.
+
+For undetected Fortnite cheats, rotate VPNs and avoid suspicious behavior.
+
+## Configuration Example
+Sample `config.ini`:
+
+```ini
+[Aimbot]
+Enabled = true
+FOV = 90
+Smoothness = 5.0
+TargetBone = head
+
+[ESP]
+Enabled = true
+EnemyColor = red
+TeamColor = blue
+MaxDistance = 500
+
+[Wallhack]
+Enabled = true
+GlowIntensity = 2.0
+```
+
+## Contributing
+Open-source (MIT License)—fork and contribute features like Fortnite speedhack or auto-build script.
 
 ## License
-Licensed under the MIT License.   
+MIT License. See [LICENSE](LICENSE).
+
+## Support & Community
+- Discord: discord.gg/playerbay
+- Issues: Open with tags like "fortnite esp not working."
+- For More cheats, visit [PlayerBay](https://playerbay.net/).
